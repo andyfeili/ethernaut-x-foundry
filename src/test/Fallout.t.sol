@@ -22,12 +22,6 @@ contract FalloutTest is DSTest {
         // LEVEL SETUP //
         /////////////////
 
-        FalloutFactory falloutFactory = new FalloutFactory();
-        ethernaut.registerLevel(falloutFactory);
-        vm.startPrank(eoaAddress);
-        address levelAddress = ethernaut.createLevelInstance(falloutFactory);
-        Fallout ethernautFallout = Fallout(payable(levelAddress));
-
         //////////////////
         // LEVEL ATTACK //
         //////////////////
